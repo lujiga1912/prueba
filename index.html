@@ -9,7 +9,7 @@ electrónico. Crea un archivo con este nombre form.php y agrega este código:
 	  crossorigin="anonymous"></script>
  
 	<!-- Cambia 6LcZu9QUAAAAACaj-WBiVIQUlr94vfCC8DUpIanS por tu clave de sitio web -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6LcZu9QUAAAAACaj-WBiVIQUlr94vfCC8DUpIanS"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LerP5gpAAAAABH1LWXUjin-YbJ-AaSYrTah0j73"></script>
   </head>
   <body>
     <h1>
@@ -27,7 +27,7 @@ electrónico. Crea un archivo con este nombre form.php y agrega este código:
         event.preventDefault();
         /*Cambia 6LcZu9QUAAAAACaj-WBiVIQUlr94vfCC8DUpIanS por tu clave de sitio web*/
         grecaptcha.ready(function() {
-            grecaptcha.execute('6LcZu9QUAAAAACaj-WBiVIQUlr94vfCC8DUpIanS', {action: 'registro'}).then(function(token) {
+            grecaptcha.execute('6LerP5gpAAAAABH1LWXUjin-YbJ-AaSYrTah0j73', {action: 'registro'}).then(function(token) {
                 $('#form').prepend('<input type="hidden" name="token" value="' + token + '">');
                 $('#form').prepend('<input type="hidden" name="action" value="registro">');
                 $('#form').unbind('submit').submit();
