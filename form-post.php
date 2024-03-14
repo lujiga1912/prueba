@@ -1,6 +1,6 @@
 <?php
 // Ingresa tu clave secreta.....
-define("RECAPTCHA_V3_SECRET_KEY", 'TU-CLAVE-SECRETA');
+define("RECAPTCHA_V3_SECRET_KEY", '6LerP5gpAAAAALN_6PKmh_1olXqIdxTwU-3-1oKK');
 $token = $_POST['token'];
 $action = $_POST['action'];
  
